@@ -6,38 +6,41 @@
     <title>Exercícios HTML</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="#exercicio1">Exercício 1</a>
-        </li>
-        <li>
-          <a href="#exercicio2">Exercício 2</a>
-        </li>
-        <li>
-          <a href="#exercicio3">Exercício 3</a>
-        </li>
-        <li>
-          <a href="#exercicio4">Exercício 4</a>
-        </li>
-        <li>
-          <a href="#exercicio5">Exercício 5</a>
-        </li>
-        <li>
-          <a href="#exercicio6">Exercício 6</a>
-        </li>
-        <li>
-          <a href="#exercicio7">Exercício 7</a>
-        </li>
-        <li>
-          <a href="#exercicio8">Exercício 8</a>
-        </li>
-        <li>
-          <a href="#exercicio9">Exercício 9</a>
-        </li>
-        <li><a href="#exercicio10">Exercício 10</a></li>
-      </ul>
-    </nav>
+    <section id="exercicio6">
+      <h2>Menu de navegação</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="#exercicio1">Exercício 1</a>
+          </li>
+          <li>
+            <a href="#exercicio2">Exercício 2</a>
+          </li>
+          <li>
+            <a href="#exercicio3">Exercício 3</a>
+          </li>
+          <li>
+            <a href="#exercicio4">Exercício 4</a>
+          </li>
+          <li>
+            <a href="#exercicio5">Exercício 5</a>
+          </li>
+          <li>
+            <a href="#exercicio6">Exercício 6</a>
+          </li>
+          <li>
+            <a href="#exercicio7">Exercício 7</a>
+          </li>
+          <li>
+            <a href="#exercicio8">Exercício 8</a>
+          </li>
+          <li>
+            <a href="#exercicio9">Exercício 9</a>
+          </li>
+          <li><a href="#exercicio10">Exercício 10</a></li>
+        </ul>
+      </nav>
+    </section>
     <section id="exercicio1">
       <h1>Bem vindo ao meu site</h1>
       <p>
@@ -77,6 +80,7 @@
       <img src="/Aula1/exercicios/assets/imgex4/img2.png" alt="" />
       <img src="/Aula1/exercicios/assets/imgex4/img3.png" alt="" />
     </section>
+
     <section id="exercicio5">
       <h2>Exercício 5: Tabela de Horários</h2>
       <table>
@@ -88,43 +92,72 @@
         </thead>
       </table>
     </section>
-    <section id="exercicio6">
-      <h2>Exercício 6: Criação de um Menu de Navegação</h2>
-      <ul>
-        <li>Referência 1</li>
-        <li>Referência 2</li>
-        <li>Referência 3</li>
-      </ul>
-    </section>
-    <section id="exercicio7">
-      <h2>Meus contatos</h2>
-      <ul>
-        <li>Telefone: (11) 9999-9999</li>
-        <li>E-mail:</li>
-      </ul>
-    </section>
+
     <section id="exercicio8">
-      <h2>Minha redes sociais</h2>
-      <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-      </ul>
+      <h2>Exercício 8: Embedding de Vídeo e Áudio</h2>
     </section>
     <section id="exercicio9">
-      <h2>Meus amigos</h2>
-      <ul>
-        <li>Amigo 1</li>
-        <li>Amigo 2</li>
-        <li>Amigo 3</li>
-      </ul>
+      <h2>Exercício 9: Criação de uma Tabela de Preços</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Café</td>
+            <td>$2.50</td>
+          </tr>
+          <tr>
+            <td>Leite</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Chocolate</td>
+            <td>$3.00</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="exercicio10">
-      <h2>Minha imagem</h2>
-      <img src="imagem.jpg" alt="Imagem do meu site" />
+      <h2>Exercício 10: Criação de um Formulário de Inscrição</h2>
+      <form action="/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <br />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="1" required />
+        <br />
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+        <br />
+        <label for="interesses">Interesses:</label>
+        <textarea
+          id="interesses"
+          name="interesses"
+          rows="4"
+          cols="30"
+        ></textarea>
+        <br />
+        <button type="submit">Enviar Inscrição</button>
+      </form>
     </section>
-    <footer>
-      &copy; Ângelo Soldati Lavorato. Todos os direitos reservados>
-    </footer>
+
+    <section id="exercicio7">
+      <h2>Exercício 7: Criação de um Rodapé</h2>
+      <footer>
+        &copy; 2024 Ângelo Soldati Lavorato. Todos os direitos reservados.
+        <a href="/politica-de-privacidade.html">Política de Privacidade</a>
+      </footer>
+    </section>
   </body>
 </html>
