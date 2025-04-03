@@ -1,46 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercícios-FORM</title>
+    <title>Exercícios de Formulários</title>
   </head>
   <body>
-    <section id="exercio1">
-      <form action="/submit" method="POST">
+    <!-- Menu de Navegação -->
+    <nav>
+      <ul>
+        <li><a href="#cadastroUsuario">Cadastro de Usuário</a></li>
+        <li><a href="#feedbackProduto">Feedback de Produto</a></li>
+        <li>
+          <a href="#preferenciasNotificacao">Preferências de Notificação</a>
+        </li>
+        <li><a href="#uploadArquivo">Upload de Arquivo</a></li>
+        <li><a href="#reservaHotel">Reserva de Hotel</a></li>
+      </ul>
+    </nav>
+
+    <!-- Seção: Cadastro de Usuário -->
+    <section id="cadastroUsuario">
+      <h2>Cadastro de Usuário</h2>
+      <form action="#" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required /><br /><br />
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required /><br /><br />
+
         <label for="senha">Senha:</label>
         <input
           type="password"
           id="senha"
           name="senha"
-          required
           minlength="8"
+          required
         /><br /><br />
-        <label for="cor">Escolha uma cor:</label><br />
-        <input type="radio" name="cor" value="vermelho" /> Vermelho<br />
-        <input type="radio" name="cor" value="azul" /> Azul<br /><br />
-        <label>Selecione seus hobbies:</label><br />
-        <input type="checkbox" name="hobbies" value="futebol" /> Futebol<br />
-        <input type="checkbox" name="hobbies" value="leitura" />
-        Leitura<br /><br />
-        <label for="cidade">Escolha uma cidade:</label>
-        <select id="cidade" name="cidade">
-          <option value="sp">São Paulo</option>
-          <option value="rj">Rio de Janeiro</option>
-          <option value="bh">Belo Horizonte</option></select
-        ><br /><br />
-        <label for="arquivo">Envie seu arquivo:</label>
-        <input type="file" id="arquivo" name="arquivo" /><br /><br />
-        <input type="submit" value="Enviar" />
+
+        <label for="confirmaSenha">Confirmação de Senha:</label>
+        <input
+          type="password"
+          id="confirmaSenha"
+          name="confirmaSenha"
+          required
+        /><br /><br />
+
+        <button type="submit">Cadastrar</button>
       </form>
     </section>
-    <section id="exercio2"></section>
-    <section id="exercio3"></section>
-    <section id="exercio4"></section>
-    <section id="exercio5"></section>
+
+    <!-- Seção: Feedback de Produto -->
+    <section id="feedbackProduto">
+      <h2>Feedback de Produto</h2>
+      <form action="#" method="post">
+        <label for="nomeCliente">Nome do Cliente:</label>
+        <input
+          type="text"
+          id="nomeCliente"
+          name="nomeCliente"
+          required
+        /><br /><br />
+
+        <label for="emailCliente">Email do Cliente:</label>
+        <input
+          type="email"
+          id="emailCliente"
+          name="emailCliente"
+          required
+        /><br /><br />
+
+        <label>Avaliação do Produto:</label><br />
+        <input type="radio" id="nota1" name="avaliacao" value="1" required />
+        <label for="nota1">1</label>
+        <input type="radio" id="nota2" name="avaliacao" value="2" />
+        <label for="nota2">2</label>
+        <input type="radio" id="nota3" name="avaliacao" value="3" />
+        <label for="nota3">3</label>
+        <input type="radio" id="nota4" name="avaliacao" value="4" />
+        <label for="nota4">4</label>
+        <input type="radio" id="nota5" name="avaliacao" value="5" />
+        <label for="nota5">5</label><br /><br />
+
+        <label for="comentarios">Comentários Adicionais:</label><br />
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Enviar Feedback</button>
+      </form>
+    </section>
+
+    <!-- Seção: Preferências de Notificação -->
+    <section id="preferenciasNotificacao">
+      <h2>Preferências de Notificação</h2>
+      <form action="#" method="post"></form>
+      <label for="nomeNotificacao">Nome:</label>
+      <input
+        type="text"
+        id="nomeNotificacao"
+        name="nomeNotificacao"
+        required
+      /><br /><br />
+
+      <label for="emailNotificacao">Email:</label>
+      <input
+        type="email"
+        id="emailNotificacao"
+        name="emailNotificacao"
+        required
+      /><br /><br />
+
+      <label>Preferências de Notificação:</label><br />
+      <input type="checkbox" id="emailNotif" name="notificacao" value="email" />
+      <label for="emailNotif">Notificações por Email</label><br />
+      <input type="checkbox" id="smsNotif" name="notificacao" value="sms" />
+      <label for="smsNotif">Notificações por SMS</label><br />
+      <input type="checkbox" id="pushNotif" name="notificacao" value="push" />
+      <label for="pushNotif">Notificações por Push</label><br /><br />
+
+      <button type="submit">Salvar Preferências</button>
+    </section>
+
+    <!-- Seção: Upload de Arquivo -->
+    <section id="uploadArquivo">
+      <h2>Upload de Arquivo</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nomeArquivo">Nome do Usuário:</label>
+        <input
+          type="text"
+          id="nomeArquivo"
+          name="nomeArquivo"
+          required
+        /><br /><br />
+
+        <label for="emailArquivo">Email:</label>
+        <input
+          type="email"
+          id="emailArquivo"
+          name="emailArquivo"
+          required
+        /><br /><br />
+
+        <label for="arquivo">Upload de Arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo" required /><br /><br />
+
+        <button type="submit">Enviar Arquivo</button>
+      </form>
+    </section>
+
+    <!-- Seção: Reserva de Hotel -->
+    <section id="reservaHotel">
+      <h2>Reserva de Hotel</h2>
+      <form action="#" method="post">
+        <label for="nomeReserva">Nome:</label>
+        <input
+          type="text"
+          id="nomeReserva"
+          name="nomeReserva"
+          required
+        /><br /><br />
+
+        <label for="emailReserva">Email:</label>
+        <input
+          type="email"
+          id="emailReserva"
+          name="emailReserva"
+          required
+        /><br /><br />
+
+        <label for="checkin">Data de Check-in:</label>
+        <input type="date" id="checkin" name="checkin" required /><br /><br />
+
+        <label for="checkout">Data de Check-out:</label>
+        <input type="date" id="checkout" name="checkout" required /><br /><br />
+
+        <label for="tipoQuarto">Tipo de Quarto:</label>
+        <select id="tipoQuarto" name="tipoQuarto" required>
+          <option value="simples">Simples</option>
+          <option value="duplo">Duplo</option>
+          <option value="suite">Suíte</option></select
+        ><br /><br />
+
+        <input type="checkbox" id="cafeManha" name="cafeManha" />
+        <label for="cafeManha">Solicitar Café da Manhã</label><br /><br />
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
   </body>
 </html>
