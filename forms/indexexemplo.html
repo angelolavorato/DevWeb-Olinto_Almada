@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Utilização de Formulários</title>
+  </head>
+  <body>
+    <h1>Trabalhando com Formulários</h1>
+    <section id="parte1">
+      <h2>1.Estrutura Básica de um Formulário HTML</h2>
+      <p>
+        Um formulário é delimitado pela tag &lt;form&gt;. Ele contém elementos
+        interativos que permitem ao usuário inserir dados, como campos de texto,
+        botões, caixas de seleção, etc. A estrutura básica é:
+      </p>
+      <form action="URL_destino" method="POST/GET">
+        <!-- Elementos de formulário vão aqui
+      --></form>
+      <p>
+        ● <strong>action</strong>: Define para onde os dados serão enviados
+        (geralmente uma URL de servidor).
+      </p>
+      <p>
+        ● <strong> method:</strong> Define como os dados serão enviados. Pode
+        ser GET (dados são visíveis na URL) ou POST (dados são enviados no corpo
+        da requisição).
+      </p>
+    </section>
+    <section id="parte2">
+      <h2>2. Tipos de Campos Usados em Formulários</h2>
+      <p>
+        Aqui estão os principais tipos de elementos usados em formulários HTML:
+      </p>
+      <h3>Campos de texto</h3>
+      <ul>
+        <li>
+          Texto simples (input type="text"): Para entradas de texto curtas (ex:
+          nome)
+        </li>
+        <li>
+          Senha (input type="password"): O texto digitado é escondido (ex:
+          senha)
+        </li>
+        <li>
+          Caixa de texto grande (textarea): Para entradas de texto longas (ex:
+          mensagem).
+        </li>
+      </ul>
+      <p>Exemplo:</p>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" /><br /><br />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea><br /><br />
+      </form>
+      <br />
+      <h3>Campos de seleção</h3>
+      <ul>
+        <li>
+          Caixas de seleção (input type="checkbox" /): Permite selecionar
+          múltiplas opções
+        </li>
+        <li>
+          Botões de opção (input type="radio"): Permite selecionar apenas uma
+          opção em um grupo.
+        </li>
+        <li>
+          Menus suspensos (select): Oferece uma lista de opções dentro de um
+          menu suspenso.
+        </li>
+      </ul>
+      <p>Exemplo:</p>
+      <form>
+        <label>Escolha sua cor favorita:</label><br />
+        <input type="radio" name="cor" value="vermelho" /> Vermelho<br />
+        <input type="radio" name="cor" value="azul" /> Azul<br />
+        <input type="radio" name="cor" value="verde" /> Verde<br /><br />
+        <label>Selecione seus hobbies:</label><br />
+        <input type="checkbox" name="hobbies" value="futebol" /> Futebol<br />
+        <input type="checkbox" name="hobbies" value="leitura" />
+        Leitura<br /><br />
+        <label>Escolha uma cidade:</label>
+        <select name="cidade">
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="bh">Belo Horizonte</option>
+        </select>
+        <h3>Campos de Arquivo</h3>
+        <p>Permite que o usuário envie um arquivo.</p>
+        <p>Exemplo:</p>
+        <form>
+          <label for="arquivo">Envie seu arquivo:</label>
+          <input type="file" id="arquivo" name="arquivo" />
+        </form>
+      </form>
+    </section>
+    <section id="parte3">
+      <h2>3. Botões de Envio</h2>
+      <p>
+        Depois que o usuário preenche o formulário, é necessário um botão para
+        submeter os dados.
+      </p>
+      <ul>
+        <li>
+          Botão de envio (input type="submit" ou button type="submit"): Envia os
+          dados do formulário
+        </li>
+      </ul>
+      <p>Exemplo:</p>
+      <form action="/submit" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required /><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <section id="parte4">
+      <h2>Atributos Importantes para Campos de Formulário</h2>
+      <p>
+        Alguns atributos comuns que podem ser usados com campos de formulários:
+      </p>
+      <ul>
+        <li>
+          <strong>name: </strong> Identifica o dado quando enviado ao servidor
+        </li>
+        <li><strong>required: </strong>Faz o campo ser obrigatório</li>
+        <li>
+          <strong>placeholder: </strong>Texto que aparece dentro do campo para
+          orientar o usuário
+        </li>
+        <li>
+          <strong>maxlength: </strong>Define o número máximo de caracteres
+        </li>
+        <li>
+          <strong>pattern: </strong>Define uma expressão regular que os dados
+          devem seguir.
+        </li>
+      </ul>
+      <p>Exemplo:</p>
+      <form>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="exemplo@dominio.com"
+        /><br /><br />
+      </form>
+    </section>
+    <section id="parte5">
+      <h2>5.Métodos de Envio: GET vs POST</h2>
+      <ul>
+        <li>
+          <strong>GET: </strong>Os dados são anexados à URL e são visíveis. É
+          usado para solicitações de busca ou envio de informações que não
+          precisam ser seguras.
+        </li>
+        <li>
+          <strong>POST: </strong> Os dados são enviados no corpo da solicitação.
+          É o método mais seguro, utilizado para o envio de informações
+          sensíveis.
+        </li>
+      </ul>
+    </section>
+    <section id="parte6">
+      <h2>Validação HTML5</h2>
+      <p>
+        O HTML5 oferece validação de formulário nativa. Campos como email e
+        number são validados automaticamente se usarem os tipos corretos
+        (type="email" ou type="number"). Além disso, você pode usar o atributo
+        pattern para validações mais complexas.
+      </p>
+      <p>Exemplo de validação de senha:</p>
+      <form>
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          required
+          minlength="8"
+        /><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <section id="parte7">
+      <h2>Um Exemplo completo de Formulário:</h2>
+      <p>Aqui está um exemplo completo de formulário para praticar:</p>
+      <form action="/submit" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          required
+          minlength="8"
+        /><br /><br />
+        <label for="cor">Escolha uma cor:</label><br />
+        <input type="radio" name="cor" value="vermelho" /> Vermelho<br />
+        <input type="radio" name="cor" value="azul" /> Azul<br /><br />
+        <label>Selecione seus hobbies:</label><br />
+        <input type="checkbox" name="hobbies" value="futebol" /> Futebol<br />
+        <input type="checkbox" name="hobbies" value="leitura" />
+        Leitura<br /><br />
+        <label for="cidade">Escolha uma cidade:</label>
+        <select id="cidade" name="cidade">
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="bh">Belo Horizonte</option></select
+        ><br /><br />
+        <label for="arquivo">Envie seu arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo" /><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>
