@@ -1,0 +1,264 @@
+/*
+	CSS can be removed or adjusted: 
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 21px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+
+.grid-item {
+  width: 200px;
+}
+.grid-item-double {
+  width: 400px;
+}
+.grid {
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #999;
+}
+.grid-item {
+  min-height: 100px;
+  text-align: center;
+  background-color: #ddd;
+  font-size: 22px;
+  padding-top: 40px;
+  color: #555;
+  font-weight: bold;
+}
+.grid-item:nth-child(1) {
+  background: #aec6cf;
+  height: 200px;
+}
+.grid-item:nth-child(2) {
+  background: #efdecd;
+  height: 150px;
+}
+.grid-item:nth-child(3) {
+  background: #78f7b0;
+  height: 110px;
+}
+.grid-item:nth-child(4) {
+  background: #fdb5ff;
+  height: 320px;
+}
+.grid-item:nth-child(5) {
+  background: #ffffb5;
+  height: 160px;
+}
+.grid-item:nth-child(6) {
+  background: #ff978a;
+  height: 520px;
+}
+.grid-item:nth-child(7) {
+  background: #b08690;
+  height: 200px;
+}
+.grid-item:nth-child(8) {
+  background: #d5b6de;
+  height: 160px;
+}
+.grid-item:nth-child(9) {
+  background: #b6c1de;
+  height: 320px;
+}
+.grid-item:nth-child(10) {
+  background: #b6dede;
+  height: 130px;
+}
+.grid-item:nth-child(11) {
+  background: #d7deb6;
+  height: 230px;
+}
+.grid-item:nth-child(12) {
+  background: #dec6b6;
+  height: 170px;
+}
+.grid-item:nth-child(13) {
+  background: #a8a2de;
+  height: 120px;
+}
+.grid-item:nth-child(14) {
+  background: #a2decc;
+  height: 220px;
+}
+.grid-item:nth-child(15) {
+  background: #c5d2de;
+  height: 260px;
+}
+.grid-item:nth-child(16) {
+  background: #deb6b6;
+  height: 140px;
+}
+.grid-item:nth-child(17) {
+  background: #ffffb5;
+  height: 180px;
+}
+.grid-item:nth-child(18) {
+  background: #d5b6de;
+  height: 220px;
+}
+.grid-item:nth-child(19) {
+  background: #efdecd;
+  height: 150px;
+}
+.grid-item:nth-child(20) {
+  background: #bfae2c;
+  height: 110px;
+}
