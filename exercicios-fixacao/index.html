@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercícios de Fixação</title>
   </head>
+
   <body>
     <!-- Exercício 1: Criação de um Cabeçalho Personalizado -->
     <header
@@ -12,7 +13,7 @@
         display: flex;
         align-items: center;
         padding: 10px;
-        background-color: #4813cd;
+        background-color: #13cd2f;
       "
     >
       <img
@@ -26,10 +27,36 @@
           Bem-vindo ao meu site
         </h2>
       </div>
+      <nav>
+        <ul style="display: flex; list-style: none; padding: 0; margin: 0">
+          <li style="margin-right: 10px">
+            <a href="#exercicio1">Exercício 1</a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#exercicio2">Exercício 2</a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#exercicio3">Exercício 3</a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#exercicio4">Exercício 4</a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#exercicio5">Exercício 5</a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#exercicio6">Exercício 6</a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#exercicio7">Exercício 7</a>
+          </li>
+          <li><a href="#exercicio8">Exercício 8</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Exercício 2: Lista de Tarefas -->
-    <section>
+    <section id="exercicio2">
       <h2>Lista de Tarefas</h2>
 
       <ul>
@@ -58,7 +85,8 @@
     </section>
 
     <!-- Exercício 3: Exibição de Vídeo do YouTube -->
-    <section>
+    <section id="exercicio3">
+      <h2>Raiden MK1 to MK12 (1992-2023) Evolution - Mortal Kombat</h2>
       <h2>Vídeo Tutorial</h2>
       <iframe
         width="362"
@@ -73,7 +101,7 @@
     </section>
 
     <!-- Exercício 4: Criação de uma Tabela de Horários -->
-    <section>
+    <section id="exercicio4">
       <h2>Tabela de Horários</h2>
       <h3>Manhã</h3>
       <table border="1" style="height: 181px" width="700">
@@ -129,54 +157,64 @@
         </tbody>
       </table>
       <h3>Tarde</h3>
-      <table style="width: 755px; height: 184px;" border="1">
+      <table style="width: 755px; height: 184px" border="1">
         <tbody>
-        <tr style="height: 20px;">
-        <td style="width: 102.363px; height: 20px;">HOR&Aacute;RIO</td>
-        <td style="width: 125.35px; height: 20px;">SEGUNDA&nbsp;</td>
-        <td style="width: 109.675px; height: 20px;">TER&Ccedil;A</td>
-        <td style="width: 133.7px; height: 20px;">QUARTA&nbsp;</td>
-        <td style="width: 145.825px; height: 20px;">QUINTA</td>
-        <td style="width: 137.288px; height: 20px;">&nbsp;SEXTA</td>
-        </tr>
-        <tr style="height: 4px;">
-        <td style="width: 102.363px; height: 4px;">12:25 - 13:15</td>
-        <td style="width: 125.35px; height: 4px;">&nbsp;ARQ. E MANUTEN&Ccedil;&Atilde;O</td>
-        <td style="width: 109.675px; height: 4px;">&nbsp;EST. ORIENT.</td>
-        <td style="width: 133.7px; height: 4px;">&nbsp;HTML/CSS</td>
-        <td style="width: 145.825px; height: 4px;">&nbsp;PROG. WEB</td>
-        <td style="width: 137.288px; height: 4px;">&nbsp;PR&Aacute;TICAS</td>
-        </tr>
-        <tr style="height: 8.675px;">
-        <td style="width: 102.363px; height: 8.675px;">&nbsp;13:15 - 14:05</td>
-        <td style="width: 125.35px; height: 8.675px;">&nbsp;ARQ. E MANUTEN&Ccedil;&Atilde;O</td>
-        <td style="width: 109.675px; height: 8.675px;">&nbsp;&nbsp;EST. ORIENT.</td>
-        <td style="width: 133.7px; height: 8.675px;">&nbsp;ARTES</td>
-        <td style="width: 145.825px; height: 8.675px;">&nbsp;PROG. WEB</td>
-        <td style="width: 137.288px; height: 8.675px;">&nbsp;SOCIOLOGIA</td>
-        </tr>
-        <tr style="height: 17px;">
-        <td style="width: 102.363px; height: 17px;">&nbsp;14:20 - 15:10</td>
-        <td style="width: 125.35px; height: 17px;">&nbsp;QU&Iacute;MICA</td>
-        <td style="width: 109.675px; height: 17px;">&nbsp;PR&Aacute;TICAS</td>
-        <td style="width: 133.7px; height: 17px;">&nbsp;JAVA</td>
-        <td style="width: 145.825px; height: 17px;">&nbsp;F&Iacute;SICA</td>
-        <td style="width: 137.288px; height: 17px;">&nbsp;PROJ. VIDA</td>
-        </tr>
-        <tr style="height: 20px;">
-        <td style="width: 102.363px; height: 20px;">&nbsp;15:10 - 16:00</td>
-        <td style="width: 125.35px; height: 20px;">&nbsp;QU&Iacute;MICA</td>
-        <td style="width: 109.675px; height: 20px;">&nbsp;&nbsp;S.O.</td>
-        <td style="width: 133.7px; height: 20px;">&nbsp;JAVA</td>
-        <td style="width: 145.825px; height: 20px;">&nbsp;F&Iacute;SICA</td>
-        <td style="width: 137.288px; height: 20px;">&nbsp;PROJ. VIDA</td>
-        </tr>
+          <tr style="height: 20px">
+            <td style="width: 102.363px; height: 20px">HOR&Aacute;RIO</td>
+            <td style="width: 125.35px; height: 20px">SEGUNDA&nbsp;</td>
+            <td style="width: 109.675px; height: 20px">TER&Ccedil;A</td>
+            <td style="width: 133.7px; height: 20px">QUARTA&nbsp;</td>
+            <td style="width: 145.825px; height: 20px">QUINTA</td>
+            <td style="width: 137.288px; height: 20px">&nbsp;SEXTA</td>
+          </tr>
+          <tr style="height: 4px">
+            <td style="width: 102.363px; height: 4px">12:25 - 13:15</td>
+            <td style="width: 125.35px; height: 4px">
+              &nbsp;ARQ. E MANUTEN&Ccedil;&Atilde;O
+            </td>
+            <td style="width: 109.675px; height: 4px">&nbsp;EST. ORIENT.</td>
+            <td style="width: 133.7px; height: 4px">&nbsp;HTML/CSS</td>
+            <td style="width: 145.825px; height: 4px">&nbsp;PROG. WEB</td>
+            <td style="width: 137.288px; height: 4px">&nbsp;PR&Aacute;TICAS</td>
+          </tr>
+          <tr style="height: 8.675px">
+            <td style="width: 102.363px; height: 8.675px">
+              &nbsp;13:15 - 14:05
+            </td>
+            <td style="width: 125.35px; height: 8.675px">
+              &nbsp;ARQ. E MANUTEN&Ccedil;&Atilde;O
+            </td>
+            <td style="width: 109.675px; height: 8.675px">
+              &nbsp;&nbsp;EST. ORIENT.
+            </td>
+            <td style="width: 133.7px; height: 8.675px">&nbsp;ARTES</td>
+            <td style="width: 145.825px; height: 8.675px">&nbsp;PROG. WEB</td>
+            <td style="width: 137.288px; height: 8.675px">&nbsp;SOCIOLOGIA</td>
+          </tr>
+          <tr style="height: 17px">
+            <td style="width: 102.363px; height: 17px">&nbsp;14:20 - 15:10</td>
+            <td style="width: 125.35px; height: 17px">&nbsp;QU&Iacute;MICA</td>
+            <td style="width: 109.675px; height: 17px">
+              &nbsp;PR&Aacute;TICAS
+            </td>
+            <td style="width: 133.7px; height: 17px">&nbsp;JAVA</td>
+            <td style="width: 145.825px; height: 17px">&nbsp;F&Iacute;SICA</td>
+            <td style="width: 137.288px; height: 17px">&nbsp;PROJ. VIDA</td>
+          </tr>
+          <tr style="height: 20px">
+            <td style="width: 102.363px; height: 20px">&nbsp;15:10 - 16:00</td>
+            <td style="width: 125.35px; height: 20px">&nbsp;QU&Iacute;MICA</td>
+            <td style="width: 109.675px; height: 20px">&nbsp;&nbsp;S.O.</td>
+            <td style="width: 133.7px; height: 20px">&nbsp;JAVA</td>
+            <td style="width: 145.825px; height: 20px">&nbsp;F&Iacute;SICA</td>
+            <td style="width: 137.288px; height: 20px">&nbsp;PROJ. VIDA</td>
+          </tr>
         </tbody>
-        </table>
+      </table>
     </section>
 
     <!-- Exercício 5: Criação de um Formulário de Contato -->
-    <section>
+    <section id="">
       <h2>Contato</h2>
       <form>
         <label for="nome">Nome:</label>
@@ -193,7 +231,7 @@
     </section>
 
     <!-- Exercício 6: Criação de uma Página de Equipe -->
-    <section>
+    <section id="exercicio6">
       <h2>Nossa Equipe</h2>
       <figure>
         <img src="membro1.jpg" alt="Membro 1" style="width: 150px" />
@@ -206,26 +244,9 @@
     </section>
 
     <!-- Exercício 7: Criação de Ancoragens Internas -->
-    <nav>
-      <a href="#seção1">Seção 1</a>
-      <a href="#seção2">Seção 2</a>
-      <a href="#seção3">Seção 3</a>
-    </nav>
-    <section id="seção1">
-      <h2>Seção 1</h2>
-      <p>Conteúdo da seção 1.</p>
-    </section>
-    <section id="seção2">
-      <h2>Seção 2</h2>
-      <p>Conteúdo da seção 2.</p>
-    </section>
-    <section id="seção3">
-      <h2>Seção 3</h2>
-      <p>Conteúdo da seção 3.</p>
-    </section>
 
     <!-- Exercício 8: Criação de Um Formulário com Validação -->
-    <section>
+    <section id="exercicio">
       <h2>Cadastro de Evento</h2>
       <form>
         <label for="nome-evento">Nome:</label>
