@@ -199,7 +199,7 @@ select {
   height: 320px;
 }
 .grid-item:nth-child(5) {
-  background: #ffffb5;
+  background:rgb(14, 58, 190);
   height: 160px;
 }
 .grid-item:nth-child(6) {
