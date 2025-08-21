@@ -1,0 +1,14 @@
+/* Torne o fundo da página azul claro */
+body {
+  background-color: pink;
+}
+
+/* Faça o título (h1) ser verde */
+h1 {
+  color: green;
+}
+
+/* Faça o parágrafo ser azul escuro */
+p {
+  color: red;
+}

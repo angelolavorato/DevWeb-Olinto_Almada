@@ -1,0 +1,11 @@
+.destaque {
+  color: red;
+  font-weight: bold;
+}
+
+.info {
+  color: blue;
+  font-style: italic;
+  font-size: 1.2em;
+  background-color: #e20909ff;
+}
