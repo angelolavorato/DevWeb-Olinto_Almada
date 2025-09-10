@@ -16,7 +16,7 @@ body {
 .caixa {
   width: 50%; /* relativo ao pai */
   height: 20vh; /* relativo à altura da viewport */
-  background: #e6f2ff;
+  background: #2371c4ff;
   display: grid;
   place-items: center;
 }
