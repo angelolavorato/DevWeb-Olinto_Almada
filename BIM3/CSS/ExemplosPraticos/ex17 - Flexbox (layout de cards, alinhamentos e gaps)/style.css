@@ -1,0 +1,38 @@
+.grid-cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap; /* quebra em múltiplas linhas */
+  justify-content: center; /* eixo principal */
+  align-items: stretch; /* eixo transversal */
+  padding: 24px;
+}
+.card1 {
+  flex: 1 1 200px; /* cresce, reduz, base 200px */
+  min-width: 200px;
+  background: #fff;
+  border: 8px solid #000000ff;
+  padding: 24px;
+  text-align: center;
+
+  background-color: #80e3c4ff;
+}
+.card2 {
+  flex: 1 1 200px; /* cresce, reduz, base 200px */
+  min-width: 200px;
+  background: #fff;
+  border: 8px solid #000000ff;
+  padding: 24px;
+  text-align: center;
+
+  background-color: yellow;
+}
+.card3 {
+  flex: 1 1 200px; /* cresce, reduz, base 200px */
+  min-width: 200px;
+  background: #fff;
+  border: 8px solid #000000ff;
+  padding: 24px;
+  text-align: center;
+
+  background-color: #ff4800ff;
+}

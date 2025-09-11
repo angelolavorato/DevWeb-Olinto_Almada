@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 } /* padding e border passam a compor a largura/altura */
 
 body {
@@ -13,7 +15,7 @@ body {
 .card {
   width: 320px; /* largura total já considera padding/border */
   padding: 16px;
-  border: 2px solid #333;
+  border: 20px solid #333;
   margin: 24px 0;
   background: #fff;
 }
