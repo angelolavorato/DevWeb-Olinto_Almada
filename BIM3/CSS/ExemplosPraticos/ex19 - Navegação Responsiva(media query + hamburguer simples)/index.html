@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ex19 - Navegação Responsiva(media query + hamburguer simples)</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand">MinhaMarca</div>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">
+        ☰
+      </button>
+      <ul id="menu" class="menu">
+        <li>Início</li>
+        <li>Produtos</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+    <script>
+      const btn = document.querySelector('.menu-btn')
+      const menu = document.getElementById('menu')
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('open')
+        btn.setAttribute('aria-expanded', menu.classList.contains('open'))
+      })
+    </script>
+  </body>
+</html>
