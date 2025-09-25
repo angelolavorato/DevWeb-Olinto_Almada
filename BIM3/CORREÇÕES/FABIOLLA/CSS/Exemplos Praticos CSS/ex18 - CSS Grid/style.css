@@ -1,0 +1,26 @@
+.layout { 
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "sidebar main"
+  "footer footer";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 10vh; gap: 12px; padding: 12px;
+}
+header { grid-area: header; background: #248fdbff; padding: 12px; }
+aside { grid-area: sidebar; background: #8be228ff; padding: 12px; }
+main { grid-area: main; background: #dd2626ff; padding: 12px; }
+footer { grid-area: footer; background: #ede7f6; padding: 12px; }
+
+/*Quebra para mobile: uma coluna*/
+@media (max-width: 720px) {
+  .layout{
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "main"
+     "footer";
+    grid-template-columns: 1fr;
+  }
+}

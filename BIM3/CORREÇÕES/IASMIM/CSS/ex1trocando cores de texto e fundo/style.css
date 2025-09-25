@@ -1,0 +1,12 @@
+/* Torne o fundo pagina azul claro */
+body {
+  background-color: blueviolet;
+}
+/* Faca o titulo (h1) ser verde */
+h1 {
+  color: azure;
+}
+/* Faca o paragrafo ser azul escuro */
+p {
+  color: beige;
+}

@@ -1,0 +1,12 @@
+html { font-size: 16px; }        /*1rem = 16px */
+body { font-family: system-ui, sans-serif; line-height: 1.5; }
+
+.lead { font-size: 1.25rem; }    /* 20px relativo a raiz*/
+.sub { font-size: 1.25rem; }        /*relativo ao pai (padrão 16px -> 20px */
+
+.caixa {
+  width: 50%;                    /* relativo ao pai */
+  height: 20 vh;                 /* relativo a altura da viewport */
+  background: #e6f2ff;
+  display: grid; plece-items: center;
+}

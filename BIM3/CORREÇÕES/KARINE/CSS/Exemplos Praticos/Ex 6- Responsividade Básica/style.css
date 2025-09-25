@@ -1,0 +1,10 @@
+body {
+  background-color: lightyellow;
+}
+
+/*Quando a tela for menos que 600px, fundo muda*/
+@media (max-width: 600px){
+    body{
+      background-color: lightcoral;
+    }
+    }

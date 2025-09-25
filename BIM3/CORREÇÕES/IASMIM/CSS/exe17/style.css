@@ -1,0 +1,15 @@
+.grid-cards {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;                 /* quebra em múltiplas linhas */
+  justify-content: center;         /* eixo principal */
+  align-items: stretch;            /* eixo transversal */
+  padding: 24px;
+}
+.card {
+  flex: 1 1 200px;                 /* cresce, reduz, base 200px */
+  min-width: 200px;
+  background: #492727; border: 1px solid #2c2b2b;
+  padding: 24px; text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}

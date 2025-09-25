@@ -1,0 +1,14 @@
+/*Menor especifidade: elemento*/
+h1 { color: teal; }
+
+/*Classe vence e elemento*/
+.titulo {calor: #da811dff; }
+/*ID vence classe e eslemento*/
+#titulo-principal { color: #a58c38ff; }
+
+/* Ordem importa quando a especificidade é igual*/
+.destaque { color: #fc0707ff ; }
+.titulo.destaque { color: #7a2424ff; }
+
+/* !important atropela a cascata e especificidade (evite em projetos reais)*/
+#titulo-principal { color: #8B0000!importante; }

@@ -1,0 +1,14 @@
+body { margin: 0; height: 200vh; font-family: Arial, sans-serif; }
+
+.topbar{
+  position: fixed; top: 0; left: 0; right: 0;
+  background: #111; color: #fff; padding: 12px; 
+  z-index: 10;
+}
+
+.painel { position: relative; margin-top: 56px; padding: 24px; backgroud: #cab4f3ff; }
+
+.tag { 
+  position: absolute; top: 8px; right: 8px;
+  backgroud: #cce5ff; padding: 8px; margin-top: 120vh;
+}

@@ -1,0 +1,6 @@
+a[data-externo="true"] { text-decoration: underline; }
+.card p { margin: 0.5rem 0; }
+.card > h2 { color: #86d9ff; }
+nav a:not([data-externo="true"]) { color: #ffee00d3; }
+h2 + p { font-weight: 600; 
+}

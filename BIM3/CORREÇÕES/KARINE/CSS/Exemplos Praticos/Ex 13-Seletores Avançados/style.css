@@ -1,0 +1,14 @@
+/* Atributo igual e booleano */
+a[data-externo="true"] {text-decoration: underlene; }
+
+/* Combinador descendentes: p dentro de .card*/
+.card p { margin: 0.5rem 0; } 
+
+/* Combinador filhor direto: apenas h2 diretamente dentro de card */
+.card > h2 {color : #fd05b3ff}
+
+/*Seleciona todos os limks do nav, exceto os marcados como externos*/
+nav a:not([data-externo="true"]) {color: #2f2a33ff; }
+
+/*Combinador adjacente: paragrafo imediatamente após h2*/
+h2 + p {font-weight: 600; }

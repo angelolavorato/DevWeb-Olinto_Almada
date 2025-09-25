@@ -1,0 +1,20 @@
+* { box-sizing: border-box; } 
+body { margin: 0; font-family: system-ui, sans-serif; } 
+ 
+.navbar { 
+  display: flex; align-items: center; justify-content: space-between; 
+  padding: 12px 16px; background: #111; color: #fff; 
+} 
+.menu { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; } 
+
+.menu a { color: #fff; text-decoration: none; } 
+.menu-btn { display: none; background: transparent; color: #fff; border: 1px 
+solid #444; padding: 6px 10px; } 
+ 
+/* Mobile first: colapsa o menu */ 
+@media (max-width: 640px) { 
+  .menu-btn { display: inline-block; } 
+  .menu { display: none; flex-direction: column; gap: 8px; padding: 12px 0; 
+} 
+  .menu.open { display: flex; }
+}
