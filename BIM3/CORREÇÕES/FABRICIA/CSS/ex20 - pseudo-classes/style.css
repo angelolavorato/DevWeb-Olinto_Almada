@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 3px solid #81e6d5ff;
+  color: #1d7c45ff;
+  text-decoration: none;
+  border-radius: 6px;
+  position: relative;
+}
+.btn:hover {
+  background: #c1d3e6ff;
+}
+.btn:focus {
+  outline: 3px solid #bfd6ecff;
+  outline-offset: 2px;
+} /* foco
+visível (a11y) */
+.btn::after {
+  content: '↗';
+  margin-left: 6px;
+  font-size: 0.9em; /* pseudo-elemento
+decorativo */
+}
+.lead::first-letter {
+  font-size: 200%;
+  font-weight: 700;
+  color: #0f87b6ff;
+}

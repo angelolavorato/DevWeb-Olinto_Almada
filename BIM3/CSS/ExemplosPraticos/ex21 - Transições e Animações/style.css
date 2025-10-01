@@ -1,0 +1,32 @@
+.cta {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #0a66c2;
+  color: #fff;
+  transition: transform 0.2s ease, background 0.3s ease; /* transição suave */
+}
+.cta:hover {
+  transform: translateY(-2px);
+  background: #a50024ff;
+}
+
+.pulse {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #72ff6aff;
+  margin-top: 16px;
+  animation: pulsar 1.2s ease-in-out infinite;
+}
+@keyframes pulsar {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+}

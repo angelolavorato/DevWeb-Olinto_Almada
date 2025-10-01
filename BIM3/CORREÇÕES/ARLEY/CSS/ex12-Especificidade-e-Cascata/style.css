@@ -1,0 +1,15 @@
+/*Menor especifidade: elementos */
+h1 { color: trsl; }
+
+/*classe vence elemento */
+  .titulo { color: blue; }
+
+/*ID vence elemento */
+#titulo-pro { color: purple; }
+
+/* Ordem importa quando a especificada (evite em */
+.destaque { color: oramge; }
+.titulo.destaque { color: crimson; }
+
+/* !important atropela a cascata e especifidade (evite em projetos reais)*/
+#titulo-principal { color: green !important; }

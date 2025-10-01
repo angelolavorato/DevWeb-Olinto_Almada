@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navegação Responsiva</title>
+    <link
+      rel="stylesheet"
+      href="/3Bimestre/CSS/ex19 -  Navegação responsiva/style.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand">MinhaMarca</div>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">
+        ☰
+      </button>
+      <ul id="menu" class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <script>
+      const btn = document.querySelector('.menu-btn')
+      const menu = document.getElementById('menu')
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('open')
+        btn.setAttribute('aria-expanded', menu.classList.contains('open'))
+      })
+    </script>
+  </body>
+</html>

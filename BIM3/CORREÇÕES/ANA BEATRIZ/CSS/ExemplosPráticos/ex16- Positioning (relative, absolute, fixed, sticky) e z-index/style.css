@@ -1,0 +1,19 @@
+body { margin: 0; height: 200vh; font-family: Arial, sans-serif; }
+
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: #111; color: #00218fff; padding: 12px;
+  z-index: 10;
+}
+
+.painel { position: relative; margin-top: 56px; padding: 24px; background: #2273beff; }
+
+.tag {
+  position: absolute; top: 8px; right: 8px;
+  background: #b69617ff; padding: 4px 8px; font-weight: 700;
+}
+
+.sentinela {
+  position: sticky; top: 56px;
+  background: #2a6db4ff; padding: 8px; margin-top: 120vh;
+}

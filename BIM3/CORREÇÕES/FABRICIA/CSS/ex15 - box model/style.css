@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /* padding e border passam a compor a
+largura/altura */
+body {
+  margin: 0;
+  padding: 2rem;
+  background: #e9f3f5ff;
+}
+.card {
+  width: 320px; /* largura total já considera
+padding/border */
+  padding: 16px;
+  border: 2px solid #54c1f3ff;
+  margin: 24px 0;
+  background: #d8f8f7ff;
+}
+.card h2 {
+  margin: 0 0 12px 0;
+} /* evita colapso de margens com o
+container */

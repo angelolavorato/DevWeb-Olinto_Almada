@@ -1,0 +1,20 @@
+.thumb {
+  width: min(90vw, 360px);
+  aspect-ratio: 4 / 3; /* mantém proporção do container */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche mantendo foco visual */
+  display: block;
+}
+.thumb figcaption {
+  padding: 8px 10px;
+  background: #fff;
+  font-size: 0.9rem;
+}

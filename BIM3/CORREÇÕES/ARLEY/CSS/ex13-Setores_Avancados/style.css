@@ -1,0 +1,14 @@
+/*Atributos igual e booleano*/
+a[data-externo="true"] { text-decoration: underline; }
+
+/*Combinador descendente: p dentro de .card*/
+.card p { margin: 0.5rem 0; }
+
+/*Combinador filho direto: apenas h2 diretamente dentro de .card*/
+.card > h2 { color: #0a66c2; }
+
+/*Selecionar todos os links do nav, exceto os marcados como externos*/
+nav a:not([data-externo="true"]) { calor: #660606ff; }
+
+/*Combinador adjacente: parágrafo imediatamente após h2*/
+h2 + p { font-weight: 600; }

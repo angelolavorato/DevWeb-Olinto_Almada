@@ -1,0 +1,29 @@
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  --prim: #0a66c2;
+}
+
+.tema-claro {
+  --bg: #ffffff;
+  --fg: #111111;
+  --prim: #0a66c2;
+}
+.tema-escuro {
+  --bg: #0f172a;
+  --fg: #e2e8f0;
+  --prim: #38bdf8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, sans-serif;
+  padding: 1.5rem;
+}
+h1 {
+  color: var(--prim);
+}
+a {
+  color: var(--prim);
+}
