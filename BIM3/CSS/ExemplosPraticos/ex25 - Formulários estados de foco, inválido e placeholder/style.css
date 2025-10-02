@@ -3,14 +3,15 @@ body {
   padding: 2rem;
 }
 .form {
+  width: 100%;
   display: grid;
   gap: 12px;
   max-width: 360px;
 }
 input {
   width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border: 1px solid #101ebcff;
   border-radius: 6px;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -19,20 +20,25 @@ input::placeholder {
 }
 input:focus {
   border-color: #0a66c2;
-  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.2);
+  box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+    -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   outline: 0;
 }
 input:invalid {
-  border-color: #e53935;
+  border: 5px solid;
+  border-color: red;
 }
 button {
+  width: 100%;
   padding: 10px 14px;
   border: 0;
   border-radius: 6px;
-  background: #0a66c2;
-  color: #fff;
+  background: #c20ac2ff;
+  color: #ffffffff;
   cursor: pointer;
 }
 button:hover {
-  filter: brightness(0.95);
+  background-color: #a51c9eff;
 }

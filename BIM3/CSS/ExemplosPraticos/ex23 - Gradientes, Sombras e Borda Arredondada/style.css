@@ -10,10 +10,9 @@ body {
 .card-ui {
   width: min(92vw, 420px);
   padding: 24px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #ffffff, #f3f6ff);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(10, 102, 194, 0.12);
+  border-radius: 8px;
+  background: linear-gradient(85deg, #ffffff, #10172eff);
+  box-shadow: 38px 23px 38px 23px rgba(0, 0, 0, 0.66);
 }
 .card-ui h2 {
   margin-top: 0;

@@ -10,8 +10,8 @@
   --prim: #0a66c2;
 }
 .tema-escuro {
-  --bg: #0f172a;
-  --fg: #e2e8f0;
+  --bg: #000000ff;
+  --fg: #ffffffff;
   --prim: #38bdf8;
 }
 
