@@ -38,6 +38,9 @@ li {
   color: #000000ff;
   line-height: 1.6;
 }
-p#cit {
+#cit {
   font-style: italic;
+}
+li::marker {
+  content: '✔';
 }
